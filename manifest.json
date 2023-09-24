@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Old Github",
+  "version": "1.0",
+
+  "description": "Hacky solution to bring back the old github feed",
+
+  "permissions": [
+  	"activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://github.com/", "https://github.com/"],
+      "js": ["revert.js"]
+    }
+  ]
+
+}
